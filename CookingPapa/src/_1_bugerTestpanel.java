@@ -40,7 +40,6 @@ public class _1_bugerTestpanel extends JPanel{
 		panel = this;
 		int rand = (int) (Math.random()*4);
 		int keyarray1[][] = new int[4][4];//0 : rand, 1 : keyCode()
-		int keyarray2[][] = new int[4][4];//0 : rand, 1 : keyCode()
 		
 		for(int i=0; i<4; i++) {
 			keyimg[i] = ImageResize(w, h, keyimg[i]);
@@ -48,10 +47,8 @@ public class _1_bugerTestpanel extends JPanel{
 		}
 		
 		JLabel keylb_1p[]= {null,null,null,null}; //up
-		JLabel keylb_2p[]= {null,null,null,null}; //up
 		
 		paintKey(keylb_1p, keyarray1, rand,x2);
-//		paintKey(keylb_2p, keyarray2, rand,x2);
 		
 		frame.requestFocus();
 		
@@ -61,7 +58,7 @@ public class _1_bugerTestpanel extends JPanel{
 			public void run() {
 				
 				frame.addKeyListener(new KeyAdapter() {
-					
+					  
 					@Override
 					public void keyPressed(KeyEvent e) {
 						if(e.getKeyChar()=='w'||e.getKeyChar()=='a'||e.getKeyChar()=='s'||e.getKeyChar()=='d') {
