@@ -11,7 +11,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class _1_bugerTestpanel2 extends JPanel {
-	JPanel panel;
 	ImageIcon bgimage = new ImageIcon("pic/cuttingboard33.png");
 	ImageIcon keyimg[] = { new ImageIcon("pic/key1.png"), // left
 			new ImageIcon("pic/key2.png"), // up
@@ -37,7 +36,6 @@ public class _1_bugerTestpanel2 extends JPanel {
 
 	_1_bugerTestpanel2(JFrame frame) {
 		setLayout(null);
-		panel= this;
 		int rand = (int) (Math.random() * 4);
 		int keyarray2[][] = new int[4][4];// 0 : rand, 1 : keyCode()
 		for (int i = 0; i < 4; i++) {
