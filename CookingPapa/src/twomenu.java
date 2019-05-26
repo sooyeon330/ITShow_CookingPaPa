@@ -14,11 +14,10 @@ class twomenu extends JPanel{
 	ImageIcon radishimg = new ImageIcon("pic/menu_radish.png");
 	ImageIcon bugerimg = new ImageIcon("pic/menu_hambuger.png");
 	
-	JPanel panel;
+
 
 	twomenu(JFrame frame){
 		setLayout(null);
-		panel = this;
 		
 		add(new back(frame, this, 1)); //뒤로가기버튼
 		
